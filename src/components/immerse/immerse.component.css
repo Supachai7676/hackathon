@@ -1,0 +1,72 @@
+.immerse-container {
+    font-family: 'Inter';
+    color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 870px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #323130;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    color: #605E5C;
+}
+
+.video-container {
+    width: 1035px;
+    height: 509px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 4px 4px 4px 0 rgba(151, 151, 151, 0.25), -4px -4px 4px 0 rgba(255, 255, 255, 0.25);
+    border-image-source: linear-gradient(116deg, #d8d8d9 -30%, #9edcff 57%, #c8cfe2 105%);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #fff, #fff), linear-gradient(116deg, #d8d8d9 -30%, #9edcff 57%, #c8cfe2 105%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-top: 30px; 
+}
+
+.bottom-container {
+    display: flex;                  /* Enable flexbox to manage layout */
+    justify-content: space-between; /* Ensures maximum space between text and button */
+    align-items: center;            /* Vertically centers the items within the container */
+    padding: 10px;                  /* Adds some padding around the content */
+    width: 1035px;                    /* Optional: ensures the container takes full width */
+    margin-top: 25px
+}
+
+.text-container {
+    font-size: 18px;
+    flex: 1;                        /* Allows the text container to take up available space */
+    text-align: left;               /* Aligns the text within the container to the left */
+
+}
+
+.enter-btn {
+    font-size: 32px;
+    font-weight: 550;
+    color: #FFFFFF;
+    background: linear-gradient(45deg, #7E4297, #C866B2, #D6B9D3);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 430px;
+    height: 70px;                    /* Fixed width for the button */
+    text-align: center;              /* Ensures text inside the button is centered */
+    margin-left: auto;               /* Pushes the button to the right */
+    display: block;                  /* Optional: ensures the button is treated as a block element */
+}
+
+

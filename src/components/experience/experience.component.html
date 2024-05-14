@@ -1,0 +1,34 @@
+<div class="experience-container">
+    <h1>Experience AI Voiceover on Your Own.</h1>
+    <div class="description">
+        <p>Explore a spectrum of voices to enhance your work experience even further. Botnoi Voice enabled everyone to select categories, 
+        <br>languages and age ranges for your creative content – give it a go!
+        </p>
+    </div>
+    
+
+    <div class="frame">
+        <div class="main-container">
+            <div class="lang-btn-container">
+                <button class="language-btn" *ngFor="let lang of TH_EN_flag" [ngClass]="lang.value">
+                    <img [src]="'assets/experience/' + lang.flag" [alt]="lang.EN_name"> {{ lang.EN_name }}
+                </button>
+            </div>
+            <div class="chat-interface">
+                <div class="chat-header">
+                    <img src="assets/avatar.jpg" alt="User Avatar" class="avatar">
+                    <select>
+                    <option *ngFor="let name of TH_EN_flag[0].va">{{ name }}</option>
+                    </select>
+                </div>
+                <div class="chat-box">
+                    <textarea placeholder="แสดงตัวอย่างของแต่ละภาษา"></textarea>
+                    <button class="play-button"><img src="assets/experience/play.png"></button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <button class="try-btn">TRY FULL VERSION</button>
+    
+</div>

@@ -1,0 +1,58 @@
+<div class="navbar-container">
+        <nav class="navbar" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+        <img src="assets/navBar/icon.png">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Voices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Use case</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Languages</a>
+            </li>
+        </ul>
+
+        <div class="right-content">
+            <div class="point">
+                <img src="assets/navBar/point.png">
+                <p>100 Point</p>
+                <img src="assets/navBar/plus.png">
+            </div>
+            <div class="lang">
+                <img src="assets/navBar/thai.png">
+                <p>TH</p>
+                <img src="assets/navBar/small-arrow.png">
+            </div>
+            <div class="item-profile">
+                <div class="profile">
+                    <img src="assets/navBar/profile.png" alt="Profile">
+                    <img src="assets/navBar/link.png" alt="Link">
+                </div>
+                <div class="user-details">
+                    <p>Noonnn</p>
+                    <div class="user-uid">
+                        <p>UID: c6b49674-1...</p>
+                        <img src="assets/navBar/duplicate.png" alt="Duplicate Icon">
+                    </div>
+                    <!-- <img src="assets/navBar/arrow.png" alt="Arrow Icon"> -->
+                </div>
+            </div>
+            
+        </div>        
+    </nav>
+</div>
+<app-explore></app-explore>
+<app-play-voice></app-play-voice>
+<app-experience></app-experience>
+<app-immerse></app-immerse>
+<app-corporate></app-corporate>
+<app-texttospeach></app-texttospeach>
+<app-fqa></app-fqa>
+<app-explore2></app-explore2>
