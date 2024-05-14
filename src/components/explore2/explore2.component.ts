@@ -9,9 +9,9 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './explore2.component.css'
 })
 export class Explore2Component {
-  changeColor(event: any) {
-    const slider = event.target;
-    const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
-    slider.style.background = `linear-gradient(to right, skyblue ${value}%, #d3d3d3 ${value}%)`;
+  updateRangeBackground(event: Event): void {
+    const inputElement = event.target as HTMLInputElement;
+    const value = (Number(inputElement.value) - Number(inputElement.min)) / (Number(inputElement.max) - Number(inputElement.min)) * 100;
+    inputElement.style.background = `linear-gradient(to right, skyblue ${value}%, #c6c2c2 ${value}%)`;
   }
 }

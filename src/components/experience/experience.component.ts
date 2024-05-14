@@ -7,7 +7,10 @@ type TLangListAll = {
   value: string;
   flag: string;
   va: string[];
+  isActive?: boolean;
 };
+
+
 
 @Component({
   selector: 'app-experience',
@@ -36,4 +39,11 @@ export class ExperienceComponent {
     { EN_name: 'German', TH_name: 'เยอรมัน', value: 'de', flag: 'de.jpg', va: ['Ava', 'Shawn'] },
     { EN_name: 'French', TH_name: 'ฝรั่งเศส', value: 'fr', flag: 'fr.jpg', va: ['Ava', 'Shawn'] },
   ];
+
+  toggleActive(lang: TLangListAll) {
+    this.TH_EN_flag.forEach(item => {
+      item.isActive = (item === lang && !item.isActive);
+    });
+  }
 }
+

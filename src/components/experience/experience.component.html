@@ -10,25 +10,37 @@
     <div class="frame">
         <div class="main-container">
             <div class="lang-btn-container">
-                <button class="language-btn" *ngFor="let lang of TH_EN_flag" [ngClass]="lang.value">
+                <button class="language-btn" *ngFor="let lang of TH_EN_flag" [ngClass]="{'active': lang.isActive}" (click)="toggleActive(lang)">
                     <img [src]="'assets/experience/' + lang.flag" [alt]="lang.EN_name"> {{ lang.EN_name }}
                 </button>
             </div>
             <div class="chat-interface">
                 <div class="chat-header">
-                    <img src="assets/avatar.jpg" alt="User Avatar" class="avatar">
-                    <select>
-                    <option *ngFor="let name of TH_EN_flag[0].va">{{ name }}</option>
-                    </select>
+                    <div class="chat-header">
+                        <select>
+                            <option *ngFor="let name of TH_EN_flag[0].va">
+                                <img src="assets/experience/va.png" alt="{{ name }}"> {{ name }}
+                            </option>
+                        </select>
+                    </div>                    
+   
                 </div>
                 <div class="chat-box">
                     <textarea placeholder="แสดงตัวอย่างของแต่ละภาษา"></textarea>
-                    <button class="play-button"><img src="assets/experience/play.png"></button>
                 </div>
+            </div>
+            <div class="bottom-container">
+                <div class="point">
+                    <img src="assets/navBar/point.png">
+                    <p>Unlimited generate and play</p>
+                </div>
+                <button class="play-button"><img src="assets/experience/play.png"></button>
             </div>
         </div> 
     </div>
-
-    <button class="try-btn">TRY FULL VERSION</button>
+    
+        <button class="try-btn">TRY FULL VERSION</button>
+    
+    
     
 </div>

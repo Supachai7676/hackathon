@@ -15,6 +15,7 @@
 .container{
   /* background-color: aliceblue; */
   /* padding: 30px; */
+  font-family: 'Inter';
   justify-content: center;
   align-items: center;
   display: flex;
@@ -29,7 +30,6 @@
   align-items: center;
   /* background-color: rgb(72, 156, 229); */
   gap: 20px;
- 
 }
 
 .box {
@@ -108,25 +108,11 @@
   font-size: 14px;
 }
 
-
-
 .border-box {
   position: absolute;
   bottom: -5px;
   right: 0;
- 
- 
- 
-
- 
 }
-
-
-
-
-
-
-
 
 .category-grid {
   margin-top: 40px;

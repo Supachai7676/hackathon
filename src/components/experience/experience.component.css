@@ -58,6 +58,13 @@ h1 {
     border-radius: 50%;
     margin-right: 5px;
 }
+
+.language-btn.active {
+  background: rgba(200, 0, 255, 0.3);
+  background: linear-gradient(75deg, rgba(200, 0, 255, 0.3), rgba(0, 246, 255, 0.3));
+}
+
+
   button {
     border: none;
     background: none;
@@ -72,7 +79,7 @@ h1 {
   }
   
   .chat-interface {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .chat-header {
@@ -80,6 +87,20 @@ h1 {
     align-items: center;
   }
   
+  select {
+    font-size: 16px;
+    height: 38px;
+    width: 789px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #b2a1fa 0%, #01bffb 100%);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #fff, #fff), linear-gradient(to right, #b2a1fa 0%, #01bffb 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
   .chat-box {
     display: flex;
     flex-direction: column;
@@ -94,12 +115,22 @@ h1 {
     border: 2px solid #BDBDBD;
   }
   
+  .bottom-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .point {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
   .play-button {
     cursor: pointer;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 9px;
   }
-
 .try-btn {
     font-size: 32px;
     font-weight: 550;
